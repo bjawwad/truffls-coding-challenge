@@ -1,0 +1,25 @@
+.template-name{
+    display: flex;
+    justify-content: center;
+}
+
+.flag-image{
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.edit-icon{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.title {
+    flex: 0.4;
+}

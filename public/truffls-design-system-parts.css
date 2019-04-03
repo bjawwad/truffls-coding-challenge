@@ -1,0 +1,227 @@
+*,
+:before,
+:after {
+  box-sizing: border-box; }
+
+.tf-button {
+  position: relative;
+  display: inline-block;
+  min-width: 72px;
+  padding: 8px 12px;
+  line-height: 18px;
+  vertical-align: middle;
+  border: 0;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  overflow: hidden;
+  -webkit-appearance: none; }
+  .tf-button::-moz-focus-inner {
+    padding: 0;
+    border: 0; }
+  .tf-button:active, .tf-button:focus {
+    outline: none; }
+  .tf-button:disabled {
+    box-shadow: none;
+    background: #dedede;
+    color: #8c8c8c; }
+
+/* Type */
+.tf-button--raised {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25); }
+
+.tf-button--flat,
+.tf-button--outlined {
+  background: transparent; }
+
+.tf-button--outlined:not(:disabled) {
+  padding: 7px 11px;
+  border: 1px solid #cccccc; }
+
+/* Type + Variation */
+.tf-button--raised.tf-button--normal:not(:disabled) {
+  background: #ffffff;
+  color: #333333; }
+
+.tf-button--raised.tf-button--normal:not(:disabled) {
+  background-position: center;
+  transition: background 150ms;
+  will-change: background; }
+  .tf-button--raised.tf-button--normal:not(:disabled):hover {
+    background-color: apply-opacity(rgba(204, 204, 204, 0.16), #ffffff); }
+  .tf-button--raised.tf-button--normal:not(:disabled):focus {
+    background-color: apply-opacity(rgba(204, 204, 204, 0.24), #ffffff); }
+  .tf-button--raised.tf-button--normal:not(:disabled):active {
+    background-color: apply-opacity(rgba(204, 204, 204, 0.48), #ffffff); }
+
+.tf-button--raised.tf-button--brand:not(:disabled) {
+  background: #28a54b;
+  color: #ffffff; }
+
+.tf-button--raised.tf-button--brand:not(:disabled) {
+  background-position: center;
+  transition: background 150ms;
+  will-change: background; }
+  .tf-button--raised.tf-button--brand:not(:disabled):hover {
+    background-color: apply-opacity(rgba(255, 255, 255, 0.08), #28a54b); }
+  .tf-button--raised.tf-button--brand:not(:disabled):focus {
+    background-color: apply-opacity(rgba(255, 255, 255, 0.24), #28a54b); }
+  .tf-button--raised.tf-button--brand:not(:disabled):active {
+    background-color: apply-opacity(rgba(255, 255, 255, 0.28), #28a54b); }
+
+.tf-button--raised.tf-button--destructive:not(:disabled) {
+  background: #d0021b;
+  color: #ffffff; }
+
+.tf-button--raised.tf-button--destructive:not(:disabled) {
+  background-position: center;
+  transition: background 150ms;
+  will-change: background; }
+  .tf-button--raised.tf-button--destructive:not(:disabled):hover {
+    background-color: apply-opacity(rgba(255, 255, 255, 0.16), #d0021b); }
+  .tf-button--raised.tf-button--destructive:not(:disabled):focus {
+    background-color: apply-opacity(rgba(255, 255, 255, 0.24), #d0021b); }
+  .tf-button--raised.tf-button--destructive:not(:disabled):active {
+    background-color: apply-opacity(rgba(255, 255, 255, 0.32), #d0021b); }
+
+.tf-button--flat.tf-button--normal:not(:disabled) {
+  background: transparent;
+  color: #333333; }
+
+.tf-button--flat.tf-button--normal:not(:disabled) {
+  background-position: center;
+  transition: background 150ms;
+  will-change: background; }
+  .tf-button--flat.tf-button--normal:not(:disabled):hover {
+    background-color: rgba(204, 204, 204, 0.12); }
+  .tf-button--flat.tf-button--normal:not(:disabled):focus {
+    background-color: rgba(204, 204, 204, 0.24); }
+  .tf-button--flat.tf-button--normal:not(:disabled):active {
+    background-color: rgba(204, 204, 204, 0.32); }
+
+.tf-button--flat.tf-button--brand:not(:disabled) {
+  background: transparent;
+  color: #28a54b; }
+
+.tf-button--flat.tf-button--brand:not(:disabled) {
+  background-position: center;
+  transition: background 150ms;
+  will-change: background; }
+  .tf-button--flat.tf-button--brand:not(:disabled):hover {
+    background-color: rgba(40, 165, 75, 0.08); }
+  .tf-button--flat.tf-button--brand:not(:disabled):focus {
+    background-color: rgba(40, 165, 75, 0.16); }
+  .tf-button--flat.tf-button--brand:not(:disabled):active {
+    background-color: rgba(40, 165, 75, 0.32); }
+
+.tf-button--flat.tf-button--destructive:not(:disabled) {
+  background: transparent;
+  color: #d0021b; }
+
+.tf-button--flat.tf-button--destructive:not(:disabled) {
+  background-position: center;
+  transition: background 150ms;
+  will-change: background; }
+  .tf-button--flat.tf-button--destructive:not(:disabled):hover {
+    background-color: rgba(216, 108, 101, 0.08); }
+  .tf-button--flat.tf-button--destructive:not(:disabled):focus {
+    background-color: rgba(216, 108, 101, 0.16); }
+  .tf-button--flat.tf-button--destructive:not(:disabled):active {
+    background-color: rgba(216, 108, 101, 0.24); }
+
+.tf-button--outlined.tf-button--normal:not(:disabled) {
+  background: transparent;
+  color: #333333; }
+
+.tf-button--outlined.tf-button--normal:not(:disabled) {
+  background-position: center;
+  transition: background 150ms;
+  will-change: background; }
+  .tf-button--outlined.tf-button--normal:not(:disabled):hover {
+    background-color: rgba(204, 204, 204, 0.12); }
+  .tf-button--outlined.tf-button--normal:not(:disabled):focus {
+    background-color: rgba(204, 204, 204, 0.24); }
+  .tf-button--outlined.tf-button--normal:not(:disabled):active {
+    background-color: rgba(204, 204, 204, 0.32); }
+
+.tf-button--outlined.tf-button--brand:not(:disabled) {
+  background: transparent;
+  color: #28a54b; }
+
+.tf-button--outlined.tf-button--brand:not(:disabled) {
+  background-position: center;
+  transition: background 150ms;
+  will-change: background; }
+  .tf-button--outlined.tf-button--brand:not(:disabled):hover {
+    background-color: rgba(40, 165, 75, 0.08); }
+  .tf-button--outlined.tf-button--brand:not(:disabled):focus {
+    background-color: rgba(40, 165, 75, 0.16); }
+  .tf-button--outlined.tf-button--brand:not(:disabled):active {
+    background-color: rgba(40, 165, 75, 0.32); }
+
+.tf-button--outlined.tf-button--destructive:not(:disabled) {
+  background: transparent;
+  color: #d0021b; }
+
+.tf-button--outlined.tf-button--destructive:not(:disabled) {
+  background-position: center;
+  transition: background 150ms;
+  will-change: background; }
+  .tf-button--outlined.tf-button--destructive:not(:disabled):hover {
+    background-color: rgba(216, 108, 101, 0.08); }
+  .tf-button--outlined.tf-button--destructive:not(:disabled):focus {
+    background-color: rgba(216, 108, 101, 0.16); }
+  .tf-button--outlined.tf-button--destructive:not(:disabled):active {
+    background-color: rgba(216, 108, 101, 0.24); }
+
+
+.tf-toggle input[type="checkbox"] {
+  position: absolute;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0); }
+
+.tf-toggle .tf-toggle__faux {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  line-height: 27px;
+  cursor: pointer; }
+
+.tf-toggle .tf-toggle__faux:before,
+.tf-toggle .tf-toggle__faux:after {
+  content: '';
+  display: inline-block;
+  transition: transform 0.2s, background-color 0.2s; }
+
+.tf-toggle .tf-toggle__faux:before {
+  margin: 0 auto;
+  width: 34px;
+  height: 14px;
+  background-color: #cdcdcd;
+  border-radius: 50em; }
+
+.tf-toggle .tf-toggle__faux:after {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.24);
+  border-radius: 50%; }
+
+.tf-toggle input[type="checkbox"]:checked + .tf-toggle__faux:before {
+  background-color: #c9e5b4; }
+
+.tf-toggle input[type="checkbox"]:checked + .tf-toggle__faux:after {
+  background-color: #94cd6f;
+  transform: translateX(90%); }
+

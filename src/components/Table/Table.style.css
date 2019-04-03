@@ -1,0 +1,39 @@
+.Table {
+    width: 100%;
+
+    overflow-x: auto;
+
+    color: #000000;
+
+    margin-top: 32px;
+}
+
+.Table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.Table table tr {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.TableHeaders {
+    color: #8c8c8c;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+}
+
+.TableHeaders th {
+    padding: 9px 0;
+}
+
+.TableHeaders__label {
+    vertical-align: middle;
+}
+
+.TableBody td {
+    text-align: center;
+    padding: 17px 0;
+}
